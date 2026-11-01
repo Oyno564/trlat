@@ -33,15 +33,35 @@ dönemi Türkçesine (Latin harfleriyle) çeviren bir web uygulaması.
 
 ## Teknolojiler
 
-- **Backend:** .NET 8 Web API
+- **Backend:** .NET 9 Web API
+- **Veritabanı:** PostgreSQL (Neon)
 - **Frontend:** React, TypeScript
 - **Yapay zekâ:** LLM API
 - **Altyapı:** Docker, GitHub Actions
 
+## Çalıştırma
+
+Repo kökünde `.env.local` dosyasına `DATABASE_URL` ekleyin, sonra:
+
+```bash
+dotnet run --project src/Ceviri.Api --launch-profile http
+dotnet test
+```
+
+API açılışta sözlük tablosunu oluşturur ve `data/glossary.csv` dosyasını yükler.
+
+| Uç nokta | Açıklama |
+|---|---|
+| `POST /api/translate` | `{ "text": "...", "seviye": 2 }` → çeviri ve değişen kelimeler |
+| `GET /api/glossary?q=okul&seviye=3` | Sözlükte arama |
+| `GET /api/glossary/health` | Veritabanı bağlantı kontrolü |
+
+Seviye: 1 = hafif, 2 = orta, 3 = ağır.
+
 ## Yol Haritası
 
-- [ ] Sözlük verisi ve veritabanı
-- [ ] Sözlük tabanlı ilk çeviri
+- [x] Sözlük verisi ve veritabanı
+- [x] Sözlük tabanlı ilk çeviri
 - [ ] Yapay zekâ katmanı
 - [ ] Web arayüzü ve PWA
 - [ ] Test seti ve doğruluk ölçümü
