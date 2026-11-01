@@ -1,6 +1,21 @@
 @Ceviri.api_HostAddress = http://localhost:5144
 
-GET {{Ceviri.api_HostAddress}}/weatherforecast/
+POST {{Ceviri.api_HostAddress}}/api/translate
+Content-Type: application/json
+
+{
+  "text": "Öğretmen, öğrencilere bilimin önemini anlattı.",
+  "seviye": 2
+}
+
+###
+
+GET {{Ceviri.api_HostAddress}}/api/glossary?q=okul
+Accept: application/json
+
+###
+
+GET {{Ceviri.api_HostAddress}}/api/glossary/health
 Accept: application/json
 
 ###

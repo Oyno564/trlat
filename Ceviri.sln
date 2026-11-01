@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ceviri.Api", "Ceviri.Api", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ceviri.api", "src\Ceviri.Api\Ceviri.api.csproj", "{121497E7-DD0F-478F-971C-D1AA9036AD26}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ceviri.Tests", "tests\Ceviri.Tests\Ceviri.Tests.csproj", "{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,18 @@ Global
 		{121497E7-DD0F-478F-971C-D1AA9036AD26}.Release|x64.Build.0 = Release|Any CPU
 		{121497E7-DD0F-478F-971C-D1AA9036AD26}.Release|x86.ActiveCfg = Release|Any CPU
 		{121497E7-DD0F-478F-971C-D1AA9036AD26}.Release|x86.Build.0 = Release|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Debug|x64.Build.0 = Debug|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Debug|x86.Build.0 = Debug|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Release|x64.ActiveCfg = Release|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Release|x64.Build.0 = Release|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +54,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BFEE73BB-983B-8787-B51A-B2BFD42CCFDA} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{121497E7-DD0F-478F-971C-D1AA9036AD26} = {BFEE73BB-983B-8787-B51A-B2BFD42CCFDA}
+		{BC40FE5C-FCF4-419C-9BE7-A34C174A3EA8} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 	EndGlobalSection
 EndGlobal
